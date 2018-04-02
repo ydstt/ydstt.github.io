@@ -106,7 +106,7 @@ function formatNewsapiResponse(response) {
 		var date = new Date(article.publishedAt)
 		var image
 
-		if (article.urlToImage[0]) {
+		if (article.urlToImage==null) {
 			image = article.urlToImage
 		}
 
