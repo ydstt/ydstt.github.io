@@ -1,0 +1,72 @@
+<html>
+<head><title>Online Journal</title>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css">
+
+	<style type="text/css">
+		#signIn-container, #list-of-entries, #entry-form, #journal {
+			display: none;
+		}
+
+		div {
+
+			font-size: 12px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+	</style>
+</head>
+<body style="background-image: http://rlv.zcache.com/yellow_big_smile_smiley_face_stickers-r2b837492b8c14e1a8fd84afe334f5aca_v9wth_8byvr_512.jpg%3Fbg%3D0xffffff;">
+
+	<div style="width: 500px; float: left" id="journal">
+		<h1>Online Journal</h1>
+
+		<h3>Below, write about a happy moment. For instance, what was your happiest moment yesterday? :</h3> <br>
+
+		<form id="entry-form">
+			<textarea rows="4" cols="50" id="entry"></textarea>
+			<br><br>
+			<input type="submit">
+		</form>
+	
+
+		<div id="list-of-entries" style="float: left">
+	      <ul class="list-entries">
+	      </ul>
+		</div>
+
+	</div>
+
+
+
+	<div id="signIn-container">
+		<h2>Sign in</h2>
+		<div id="firebaseui-auth-container"></div>
+	</div>
+
+	
+
+
+	<div id="inspirationSideBar" style="position: relative; float: right; width: 230px;">
+		<div align="center"><h4>Inspiration</h4>
+		<div id="photoOfTheDay" align="center">
+			Nasa Photo of the day<br>
+		</div>
+		......................................
+		<br><br>
+		<div id="Quote" align="left">
+			<script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+			<small><i><a href="https://www.brainyquote.com/quote_of_the_day" target="_blank" rel="nofollow">more Quotes</a></i></small>
+		</div>
+		</div>
+	</div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+ <script src="js/keys.js"></script>
+ <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+ <script src="js/app.js"></script>
+ <script src="js/sidebar.js"></script>
+ 
+</body>
+</html>
